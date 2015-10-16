@@ -1,3 +1,6 @@
+.ipynb_checkpoints/
+*.ipynb
+
 .DS_*
 data/*
 
