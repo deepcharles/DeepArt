@@ -4,4 +4,4 @@
 * weights and architecture of the CNN are available here: http://www.robots.ox.ac.uk/~vgg/research/very_deep/
 
 # DeepArt
-on se la joue artiste parce que le vie c'est compliquée gros
+on se la joue artiste parce que la vie c'est compliqué gros
