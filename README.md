@@ -1,3 +1,6 @@
+# Download pre-trained model
+https://s3.amazonaws.com/lasagne/recipes/pretrained/imagenet/vgg19.pkl
+
 # References
 * http://arxiv.org/pdf/1508.06576v1.pdf
 * code in torch: https://github.com/jcjohnson/neural-style
