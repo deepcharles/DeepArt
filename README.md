@@ -1,5 +1,6 @@
 # References
 * http://arxiv.org/pdf/1508.06576v1.pdf
+* http://arxiv.org/pdf/1505.07376v1.pdf
 * code in torch: https://github.com/jcjohnson/neural-style
 * weights and architecture of the CNN are available here: http://www.robots.ox.ac.uk/~vgg/research/very_deep/
 * Lasagne Recipes: https://github.com/Lasagne/Recipes
