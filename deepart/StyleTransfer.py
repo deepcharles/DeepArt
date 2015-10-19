@@ -114,5 +114,4 @@ if __name__ == '__main__':
     tic = time.time()
     s.transfer_style()
     print()
-    print("Style transfer done in: " str(time.time() - tic))
-    
+    print("Style transfer done in: " + str(time.time() - tic))
