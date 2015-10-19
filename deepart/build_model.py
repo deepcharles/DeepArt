@@ -5,7 +5,12 @@ from lasagne.layers import InputLayer
 from lasagne.layers.dnn import Conv2DDNNLayer as ConvLayer
 from lasagne.layers import Pool2DLayer as PoolLayer
 import lasagne
-from deepart import IMAGE_W
+
+import numpy as np
+from lasagne.utils import floatX
+
+IMAGE_W = 600
+MEAN_VALUES = np.array([104, 117, 123]).reshape((3,1,1))
 
 
 # Note: tweaked to use average pooling instead of maxpooling

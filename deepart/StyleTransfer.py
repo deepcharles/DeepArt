@@ -5,10 +5,13 @@ import matplotlib.pyplot as plt
 import theano.tensor as T
 import theano
 import lasagne
-from deepart import floatX, np, IMAGE_W
 from loss_functions import content_loss, style_loss, total_variation_loss
 import scipy
+import numpy as np
+from lasagne.utils import floatX
 
+IMAGE_W = 600
+MEAN_VALUES = np.array([104, 117, 123]).reshape((3,1,1))
 
 class StyleTransfer:
     def __init__(self, photo_string, art_string, content=0.001, style=0.2e6, total_var=0.1e-7):
