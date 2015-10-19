@@ -5,11 +5,12 @@ from lasagne.layers import InputLayer
 from lasagne.layers.dnn import Conv2DDNNLayer as ConvLayer
 from lasagne.layers import Pool2DLayer as PoolLayer
 import lasagne
-from . import IMAGE_W
+from deepart import IMAGE_W
 
 
 # Note: tweaked to use average pooling instead of maxpooling
 def build_model():
+    print("building model")
     net = {}
     net['input'] = InputLayer((1, 3, IMAGE_W, IMAGE_W))
     net['conv1_1'] = ConvLayer(net['input'], 64, 3, pad=1)
@@ -33,8 +34,13 @@ def build_model():
     net['conv5_3'] = ConvLayer(net['conv5_2'], 512, 3, pad=1)
     net['conv5_4'] = ConvLayer(net['conv5_3'], 512, 3, pad=1)
     net['pool5'] = PoolLayer(net['conv5_4'], 2, mode='average_exc_pad')
-
+    print("model built.")
+    print()
+    print("Loading weights.")
     values = pickle.load(open('vgg19_normalized.pkl'))['param values']
+    print()
+    print("Loaded. Setting the weights.")
     lasagne.layers.set_all_param_values(net['pool5'], values)
-
+    print()
+    print("Set.")
     return net

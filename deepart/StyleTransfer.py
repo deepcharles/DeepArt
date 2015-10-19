@@ -88,7 +88,11 @@ class StyleTransfer:
         x0 = self.generated_image.get_value().astype('float64')
 
         # Optimize
+        print()
+        print("Starting optimization.")
         scipy.optimize.fmin_l_bfgs_b(self.eval_loss, x0.flatten(), fprime=self.eval_grad, maxfun=400)
+        print()
+        print("Done")
         x0 = self.generated_image.get_value().astype('float64')
         im = deprocess(x0)
 
@@ -101,7 +105,14 @@ class StyleTransfer:
         return im
 
 if __name__ == '__main__':
+    import time
+    tic = time.time()
     s = StyleTransfer(photo_string="photo_charles.jpg",
                       art_string="1920px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg")
-
+    print("Instantiation in " + str(time.time() - tic))
+    print()
+    tic = time.time()
     s.transfer_style()
+    print()
+    print("Style transfer done in: " str(time.time() - tic))
+    
