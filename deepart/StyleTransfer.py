@@ -93,7 +93,7 @@ class StyleTransfer:
         # Optimize
         print()
         print("Starting optimization.")
-        scipy.optimize.fmin_l_bfgs_b(self.eval_loss, x0.flatten(), fprime=self.eval_grad, maxfun=400)
+        scipy.optimize.fmin_l_bfgs_b(self.eval_loss, x0.flatten(), fprime=self.eval_grad, maxfun=40)
         print()
         print("Done")
         x0 = self.generated_image.get_value().astype('float64')
