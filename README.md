@@ -1,4 +1,7 @@
 # References
+
+CSS and HTML5 templates: http://templated.co/
+
 * http://arxiv.org/pdf/1508.06576v1.pdf
 * http://arxiv.org/pdf/1505.07376v1.pdf
 * code in torch: https://github.com/jcjohnson/neural-style
