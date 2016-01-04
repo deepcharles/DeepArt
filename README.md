@@ -11,5 +11,5 @@ CSS and HTML5 templates: http://templated.co/
 # Download pre-trained model
 https://s3.amazonaws.com/lasagne/recipes/pretrained/imagenet/vgg19.pkl
 
-# DeepArt
-on se la joue artiste parce que la vie c'est compliqué gros
+# La Concurrence
+https://no2147483647.wordpress.com/2015/12/21/deep-learning-for-hackers-with-mxnet-2/
