@@ -12,4 +12,6 @@ CSS and HTML5 templates: http://templated.co/
 https://s3.amazonaws.com/lasagne/recipes/pretrained/imagenet/vgg19.pkl
 
 # La Concurrence
+http://mtyka.github.io/code/2015/10/02/experiments-with-style-transfer.html
+
 https://no2147483647.wordpress.com/2015/12/21/deep-learning-for-hackers-with-mxnet-2/
